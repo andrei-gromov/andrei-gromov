@@ -15,8 +15,10 @@ Here are some ideas to get you started:
 
 ## Welcome to my Github profile!👋
 
+```
 ╭── A N D R E I  G R O M O V ──────────────────────────────────────╮
 │   [⚡] SYSTEM READY   [✓] KERNEL LOADED.  [▶️] STARTING WORKERS   │
 ╰──────────────────────────────────────────────────────────────────╯
+```
 
 [![Codwears badge](https://www.codewars.com/users/andrei-gromov/badges/large)](https://www.codewars.com/users/andrei-gromov)
