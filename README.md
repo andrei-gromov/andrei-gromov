@@ -24,7 +24,7 @@ Here are some ideas to get you started:
 ╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═╝  ╚═╝╚══════╝╚═╝    ╚═════╝ ╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝ ╚═════╝   ╚═══╝
 
 ╭── A N D R E I  G R O M O V ──────────────────────────────────────╮
-│   [⚡] SYSTEM READY   [✓] KERNEL LOADED.  [▶️] STARTING WORKERS   │
+│   [⚡] SYSTEM READY   [✓] KERNEL LOADED   [▶️] STARTING WORKERS   │
 ╰──────────────────────────────────────────────────────────────────╯
 ```
 
