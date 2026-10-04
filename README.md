@@ -28,4 +28,6 @@ Here are some ideas to get you started:
 ╰──────────────────────────────────────────────────────────────────╯
 ```
 
+<!--
 [![Codwears badge](https://www.codewars.com/users/andrei-gromov/badges/large)](https://www.codewars.com/users/andrei-gromov)
+-->
