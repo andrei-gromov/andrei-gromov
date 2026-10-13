@@ -7,5 +7,5 @@
 </p>
 
 <p align="center">
-  <sub>Curious about data, physics, and machines that think.</sub>
+  <sub>Curious about data engineering and machines that think.</sub>
 </p>
