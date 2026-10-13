@@ -1,18 +1,4 @@
 <!--
-**andrei-gromov/andrei-gromov** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
-
-## Welcome to my Github profile!👋
 
 ```
  █████╗ ███╗   ██╗██████╗  ██████╗ ███████╗██╗    ██████╗ ██████╗  ██████╗ ███╗   ███╗ ██████╗ ██╗   ██╗
@@ -29,3 +15,15 @@ Here are some ideas to get you started:
 
 [![Codwears badge](https://www.codewars.com/users/andrei-gromov/badges/large)](https://www.codewars.com/users/andrei-gromov)
 -->
+
+<p align="center">
+  <img src="dragon.svg" width="320" alt="A pixel-art dragon flexing both biceps">
+</p>
+
+<p align="center">
+  <code>SELECT gains FROM gym WHERE day != 'leg';</code>
+</p>
+
+<p align="center">
+  <sub>Curious about data, physics, and machines that think.</sub>
+</p>
