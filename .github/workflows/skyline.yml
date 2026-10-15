@@ -1,0 +1,58 @@
+name: Update contribution skyline
+
+on:
+  workflow_dispatch:
+  schedule:
+    # UTC: каждые 6 часов на 23-й минуте.
+    - cron: '23 */6 * * *'
+  push:
+    paths:
+      - 'scripts/generate-skyline.mjs'
+      - '.github/workflows/skyline.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-skyline
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    if: github.ref == format('refs/heads/{0}', github.event.repository.default_branch)
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+
+      - name: Generate SVG from GitHub activity
+        env:
+          GITHUB_TOKEN: ${{ secrets.SKYLINE_TOKEN || github.token }}
+          GITHUB_USERNAME: ${{ github.repository_owner }}
+          # commits = только коммиты; contributions = вся активность календаря.
+          SKYLINE_MODE: contributions
+        run: node scripts/generate-skyline.mjs
+
+      - name: Save generated images
+        env:
+          TARGET_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/commit-skyline.svg assets/commit-skyline-static.svg
+          if git diff --cached --quiet; then
+            echo 'Skyline is already up to date.'
+            exit 0
+          fi
+          git commit -m 'chore: update contribution skyline'
+          git pull --rebase origin "$TARGET_BRANCH"
+          git push origin "HEAD:$TARGET_BRANCH"
