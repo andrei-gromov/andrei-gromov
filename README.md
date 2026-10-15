@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="src/assets/dragon.svg" width="128" alt="A pixel-art red dragon flexing and breathing fire">
+  <img src="src/assets/dragon.svg" width="150" alt="A pixel-art red dragon flexing and breathing fire">
 </p>
 
 <p align="center">
